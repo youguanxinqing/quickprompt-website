@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick Prompt — Your prompts, one keystroke away</title>
+<meta name="description" content="Quick Prompt is a fast prompt launcher for Mac, iPhone and iPad. Fill-in templates, instant search, and a custom keyboard. Free download for Mac.">
+<style>
+  :root{
+    --coral:#F76C47; --coral-ink:#C44A22;
+    --cream:#FCF8F4; --warm:#F4EFE8; --surface:#FFFFFF;
+    --ink:#2B2623; --ink-soft:#867E74; --line:#EDE6DD;
+    --pill-bg:#FFEBE2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--cream); color:var(--ink); line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  header{padding:28px 0;display:flex;align-items:center;gap:12px}
+  .logo{
+    width:40px;height:40px;border-radius:12px;
+    background:var(--coral);display:grid;place-items:center;
+    color:#fff;font-size:22px;font-weight:700;flex:none;
+  }
+  .brand{font-size:19px;font-weight:600}
+  .hero{padding:56px 0 40px;text-align:center}
+  .hero h1{font-size:clamp(34px,6vw,52px);line-height:1.1;letter-spacing:-0.02em;font-weight:700}
+  .hero p{margin:20px auto 0;max-width:520px;font-size:19px;color:var(--ink-soft)}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:15px 26px;border-radius:16px;font-size:17px;font-weight:600;
+    text-decoration:none;border:1px solid transparent;transition:transform .12s ease,box-shadow .12s ease;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--coral);color:#fff;box-shadow:0 8px 24px rgba(247,108,71,.32)}
+  .btn-primary:hover{box-shadow:0 10px 30px rgba(247,108,71,.42)}
+  .btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
+  .note{margin-top:18px;font-size:14px;color:var(--ink-soft)}
+  .features{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;margin:48px 0;
+  }
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+  .card .ic{font-size:24px}
+  .card h3{font-size:17px;margin:12px 0 6px;font-weight:600}
+  .card p{font-size:15px;color:var(--ink-soft)}
+  .mac-box{
+    background:var(--warm);border-radius:20px;padding:24px;margin:40px 0;
+    font-size:15px;color:var(--ink);
+  }
+  .mac-box strong{color:var(--coral-ink)}
+  footer{padding:40px 0 56px;border-top:1px solid var(--line);margin-top:24px;
+    display:flex;gap:20px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--ink-soft)}
+  footer a{color:var(--ink-soft);text-decoration:none}
+  footer a:hover{color:var(--coral-ink)}
+  .spacer{flex:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">Q</div>
+    <div class="brand">Quick Prompt</div>
+  </header>
+
+  <section class="hero">
+    <h1>Your prompts,<br>one keystroke away.</h1>
+    <p>Save your best prompts once. Search, fill in the blanks, and drop them into any app — on Mac, iPhone and iPad.</p>
+
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/youguanxinqing/quickprompt-website/releases/latest/download/QuickPrompt.dmg">
+        ⬇ Download for Mac
+      </a>
+      <a class="btn btn-ghost" href="#">Get it on the App Store</a>
+    </div>
+    <p class="note">Free for Mac · macOS 14+ · notarized by Apple</p>
+  </section>
+
+  <section class="features">
+    <div class="card"><div class="ic">⚡️</div><h3>Instant search</h3><p>Open, type a few letters, hit enter. Fuzzy search finds the right prompt in milliseconds.</p></div>
+    <div class="card"><div class="ic">✏️</div><h3>Fill-in templates</h3><p>Prompts with <code>{{blanks}}</code> open a quick form so you never paste a half-finished prompt.</p></div>
+    <div class="card"><div class="ic">⌨️</div><h3>Custom keyboard</h3><p>On iPhone and iPad, reach your prompts from a custom keyboard inside any chat box.</p></div>
+    <div class="card"><div class="ic">☁️</div><h3>iCloud sync</h3><p>Your library stays in sync across all your Apple devices — and never leaves your iCloud.</p></div>
+  </section>
+
+  <section class="mac-box">
+    <p>📦 <strong>About the Mac version:</strong> Quick Prompt for Mac is distributed as a free, Apple-notarized DMG so it can paste prompts straight into your focused app — something the Mac App Store sandbox doesn’t allow. Buy <strong>Pro</strong> once on iPhone or iPad and, signed into the same iCloud account, your Mac unlocks Pro automatically. No separate Mac purchase.</p>
+  </section>
+
+  <footer>
+    <span>© Quick Prompt</span>
+    <span class="spacer"></span>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:support@quickprompt.app">Support</a>
+  </footer>
+
+</div>
+</body>
+</html>
