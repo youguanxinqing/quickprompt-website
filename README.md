@@ -6,4 +6,4 @@ launcher for Mac, iPhone and iPad.
 - `index.html` — landing page (Mac download, App Store, links)
 - `privacy.html` — privacy policy
 
-Live at https://youguanxinqing.github.io/quickprompt-website/
+Live at https://quickprompt.youguanxinqing.com
