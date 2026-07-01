@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick Prompt — AI Skill</title>
+<meta name="description" content="Let your AI agent (Claude Code and friends) read, create and update prompts in Quick Prompt for you — locally, no keys.">
+<style>
+  :root{
+    --coral:#F76C47; --coral-ink:#C44A22;
+    --cream:#FCF8F4; --warm:#F4EFE8; --surface:#FFFFFF;
+    --ink:#2B2623; --ink-soft:#867E74; --line:#EDE6DD;
+    --pill-bg:#FFEBE2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--cream); color:var(--ink); line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  header{padding:28px 0;display:flex;align-items:center;gap:12px}
+  header a{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  .logo{
+    width:40px;height:40px;border-radius:12px;
+    background:var(--coral);display:grid;place-items:center;
+    color:#fff;font-size:22px;font-weight:700;flex:none;
+  }
+  .brand{font-size:19px;font-weight:600}
+  .hero{padding:48px 0 36px;text-align:center}
+  .hero .pill{display:inline-block;background:var(--pill-bg);color:var(--coral-ink);
+    font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;margin-bottom:20px}
+  .hero h1{font-size:clamp(30px,5.5vw,46px);line-height:1.1;letter-spacing:-0.02em;font-weight:700}
+  .hero p{margin:20px auto 0;max-width:540px;font-size:18px;color:var(--ink-soft)}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:15px 26px;border-radius:16px;font-size:17px;font-weight:600;
+    text-decoration:none;border:1px solid transparent;transition:transform .12s ease,box-shadow .12s ease;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--coral);color:#fff;box-shadow:0 8px 24px rgba(247,108,71,.32)}
+  .btn-primary:hover{box-shadow:0 10px 30px rgba(247,108,71,.42)}
+  .note{margin-top:16px;font-size:14px;color:var(--ink-soft)}
+  .features{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;margin:44px 0;
+  }
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+  .card .ic{font-size:24px}
+  .card h3{font-size:17px;margin:12px 0 6px;font-weight:600}
+  .card p{font-size:15px;color:var(--ink-soft)}
+  .steps{background:var(--warm);border-radius:20px;padding:24px 26px;margin:40px 0}
+  .steps h2{font-size:18px;font-weight:600;margin-bottom:14px}
+  .steps ol{margin:0;padding-left:20px}
+  .steps li{margin:10px 0;font-size:15px}
+  code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  pre{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:14px 16px;margin:12px 0 0;font-size:13.5px;overflow-x:auto;line-height:1.5}
+  .steps code{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:13px}
+  footer{padding:40px 0 56px;border-top:1px solid var(--line);margin-top:24px;
+    display:flex;gap:20px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--ink-soft)}
+  footer a{color:var(--ink-soft);text-decoration:none}
+  footer a:hover{color:var(--coral-ink)}
+  .spacer{flex:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a href="index.html">
+      <div class="logo">Q</div>
+      <div class="brand">Quick Prompt</div>
+    </a>
+  </header>
+
+  <section class="hero">
+    <span class="pill">AI Skill · Claude Code &amp; friends</span>
+    <h1>Let your AI manage<br>your prompts.</h1>
+    <p>Install this skill and your agent can search, save and edit prompts in Quick Prompt just by talking to it. Everything stays on your Mac — no network, no keys.</p>
+
+    <div class="cta">
+      <a class="btn btn-primary" href="quickprompt-skill.zip" download>
+        ⬇ Download the skill
+      </a>
+    </div>
+    <p class="note">macOS · requires <a href="index.html">Quick Prompt for Mac</a> and a skill-capable agent</p>
+  </section>
+
+  <section class="features">
+    <div class="card"><div class="ic">🔎</div><h3>Ask what you have</h3><p>“Do I already have a prompt about code comments?” — the agent reads your library and answers.</p></div>
+    <div class="card"><div class="ic">💾</div><h3>Save on the fly</h3><p>“Save this as a prompt.” It opens the editor in Quick Prompt for you to glance at and keep.</p></div>
+    <div class="card"><div class="ic">✏️</div><h3>Tweak existing ones</h3><p>“Add a {{language}} blank to that comment prompt.” Updates land as pending review, never silently.</p></div>
+    <div class="card"><div class="ic">🔒</div><h3>Local &amp; safe</h3><p>Reads a local file, writes only through the app. No deletes, no network, no API keys.</p></div>
+  </section>
+
+  <section class="steps">
+    <h2>Install</h2>
+    <ol>
+      <li>Download and unzip <code>quickprompt-skill.zip</code>.</li>
+      <li>Drop the <code>quickprompt/</code> folder into your agent's skills directory:
+<pre>mkdir -p ~/.claude/skills
+cp -R quickprompt ~/.claude/skills/</pre>
+      </li>
+      <li>Restart your agent. Then just talk to it — “存进 Quick Prompt”, “我有没有关于 X 的 prompt”, “改一下那条 prompt”.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <span>© Quick Prompt</span>
+    <span class="spacer"></span>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:support@quickprompt.app">Support</a>
+  </footer>
+
+</div>
+</body>
+</html>
